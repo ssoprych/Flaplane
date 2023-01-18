@@ -6,6 +6,7 @@ public class TriggerEnter : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Spawner")) return;
         FindObjectOfType<GameManager>().Score++;
     }
 }

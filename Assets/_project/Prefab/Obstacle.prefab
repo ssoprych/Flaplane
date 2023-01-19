@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 7099834406739331699}
   - component: {fileID: 1712943019}
   - component: {fileID: 6508616848053083154}
+  - component: {fileID: 3805400717374031521}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -230,6 +231,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0913286, y: 1.339159}
   m_EdgeRadius: 0
+--- !u!114 &3805400717374031521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797913279583852466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd872f8a0107afc4abd50e6772b0296e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathScreen: {fileID: 2090378040942105937, guid: c15f6036a19da6c47b4698e0b52f15a2, type: 3}
 --- !u!1001 &4899694030729155198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -325,8 +339,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1536102570497785670, guid: 399164c24650e734696cf898e5a1a39e, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 399164c24650e734696cf898e5a1a39e, type: 3}
 --- !u!224 &6246036269145730247 stripped
 RectTransform:
@@ -428,8 +441,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpperObstacle
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4864726772231713863, guid: 9924f4ff1e1fd594c84f64ea5cfda888, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9924f4ff1e1fd594c84f64ea5cfda888, type: 3}
 --- !u!224 &1330754111787461116 stripped
 RectTransform:

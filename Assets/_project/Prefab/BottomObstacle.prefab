@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1536102570497785531}
   - component: {fileID: 8630553518727586966}
   - component: {fileID: 1536102570497785669}
-  - component: {fileID: 1536102570497785670}
+  - component: {fileID: 8017100277141376367}
   m_Layer: 0
   m_Name: BottomObstacle
   m_TagString: Untagged
@@ -133,7 +133,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012743458, y: -0.5929195}
+  m_Offset: {x: 0.016193971, y: -0.5929195}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -144,7 +144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.85783994, y: 1.2441608}
+  m_Size: {x: 0.799965, y: 1.2441608}
   m_EdgeRadius: 0
 --- !u!61 &8630553518727586966
 BoxCollider2D:
@@ -193,7 +193,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1536102570497785670
+--- !u!114 &8017100277141376367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,6 +202,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1536102570497785528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe67fb2b3f0b38469c671a4a0265019, type: 3}
+  m_Script: {fileID: 11500000, guid: dd872f8a0107afc4abd50e6772b0296e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeathScreen: {fileID: 2090378040942105937, guid: c15f6036a19da6c47b4698e0b52f15a2, type: 3}

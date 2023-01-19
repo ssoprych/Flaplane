@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4864726772231713866}
   - component: {fileID: 5446255893345038911}
   - component: {fileID: 4864726772231713864}
-  - component: {fileID: 4864726772231713863}
+  - component: {fileID: 6941719280496662207}
   m_Layer: 0
   m_Name: UpperObstacle
   m_TagString: Untagged
@@ -193,7 +193,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4864726772231713863
+--- !u!114 &6941719280496662207
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,6 +202,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4864726772231713869}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe67fb2b3f0b38469c671a4a0265019, type: 3}
+  m_Script: {fileID: 11500000, guid: dd872f8a0107afc4abd50e6772b0296e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeathScreen: {fileID: 2090378040942105937, guid: c15f6036a19da6c47b4698e0b52f15a2, type: 3}

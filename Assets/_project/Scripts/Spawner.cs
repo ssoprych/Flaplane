@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            var position = new Vector3(10, Random.Range(-2f, 3f), 0);
+            var position = new Vector3(10, Random.Range(-3f, 3f), 0);
             Instantiate(Obstacle, position, ObstacleSpawn.transform.rotation);
         }
     }

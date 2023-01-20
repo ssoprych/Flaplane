@@ -16,12 +16,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         Score = 0;
         IsDead = false;
+        FindObjectOfType<AudioManager>().GameMusic.Play();
     }
     private void Update()
     {
         _score_text.text = Score.ToString();
         if (IsDead)
         {
+            FindObjectOfType<AudioManager>().GameMusic.Stop();
             DeathScreen.SetActive(true);
             if (Score > PlayerPrefs.GetInt("HighScore", 0))
             {    

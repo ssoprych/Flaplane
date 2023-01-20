@@ -8,6 +8,7 @@ public class Death : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().DeathSound.Play();
             Time.timeScale = 0;
             FindObjectOfType<GameManager>().IsDead = true;
         }

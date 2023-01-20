@@ -8,6 +8,7 @@ public class TriggerEnter : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().EarnPoint.Play();
             FindObjectOfType<GameManager>().Score++;
         }
     }

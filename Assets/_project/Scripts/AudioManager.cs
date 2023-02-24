@@ -4,7 +4,38 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource DeathSound;
-    public AudioSource GameMusic;
-    public AudioSource EarnPoint;
+    public static AudioManager Instance;
+    public AudioSource audioSource;
+    public AudioSource musicSource;
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+    
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+
+    public void PlayMusic(AudioClip clip)
+    {
+        musicSource.clip = clip;
+        musicSource.Play();
+    }
+
+    public void StopMusic(AudioClip clip)
+    {
+        musicSource.clip = clip;
+        musicSource.Stop();
+    }
 }

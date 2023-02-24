@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class TriggerEnter : MonoBehaviour
 {
+    public AudioClip EarnPoint;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            FindObjectOfType<AudioManager>().EarnPoint.Play();
-            FindObjectOfType<GameManager>().Score++;
+            AudioManager.Instance.PlaySound(EarnPoint);
+            Singleton.Instance.Score++;
         }
     }
 }

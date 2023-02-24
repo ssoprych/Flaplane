@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06e717cea8d5934c8d9f9e3c121540f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EarnPoint: {fileID: 8300000, guid: 9c29146bd687a164a8908109dcdcdc5e, type: 3}
 --- !u!1 &7797913279583852466
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd872f8a0107afc4abd50e6772b0296e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathScreen: {fileID: 2090378040942105937, guid: c15f6036a19da6c47b4698e0b52f15a2, type: 3}
+  DeathSound: {fileID: 0}
 --- !u!1001 &4899694030729155198
 PrefabInstance:
   m_ObjectHideFlags: 0

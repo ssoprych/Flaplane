@@ -11,7 +11,7 @@ public class DeathScreen : MonoBehaviour
 
     private void Start()
     {
-        _deathScore.text = FindObjectOfType<GameManager>().Score.ToString();
+        _deathScore.text = Singleton.Instance.Score.ToString();
         _bestScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
     }
 
